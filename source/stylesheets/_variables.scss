@@ -1,0 +1,12 @@
+// Points of reassembly
+@import 'include-media/dist/include-media';
+
+$breakpoints: (
+  'tablet': 650px,
+  'desktop': 1024px
+);
+
+// Spacing
+$Theme-space-large: 60px;
+$Theme-space-base: 30px;
+$Theme-space-small: 15px;

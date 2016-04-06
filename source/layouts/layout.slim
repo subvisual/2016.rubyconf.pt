@@ -1,0 +1,64 @@
+doctype 5
+html.Theme itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.language
+  head
+    meta charset='utf-8'
+    meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'
+    // Mobile Specific Metas
+    meta name='viewport' content='width=device-width, initial-scale=1'
+
+    = stylesheet_link_tag 'all'
+    = yield_content :stylesheets
+
+    title="RubyConf PT 2016"
+
+    meta name='description' content="RubyConf PT 2016"
+    meta name='robots' content='index,follow'
+
+    // Twitter
+    meta name='twitter:card' content="summary"
+    meta name='twitter:site' content=""
+    meta name='twitter:title' content="RubyConf Portugal 2016"
+    meta name='twitter:description' content=""
+    meta name='twitter:creator' content="@rubyconfpt"
+
+    // Open Graph General (Facebook & Pinterest)
+    meta property='og:url' content="http://rubyconf.pt/"
+    meta property='og:title' content="RubyConf PT 2016"
+    meta property='og:description' content="RubyConf PT 2016"
+    meta property='og:site_name' content="RubyConf PT 2016"
+    meta property='og:image' content=""
+    meta property='og:app_id' content="169112516473978"
+    meta property='fb:admins' content="169112516473978,100000633932565,1448175923"
+    meta property='og:type' content='website'
+    // Google Plus
+    meta itemprop='name' content="RubyConf PT 2016"
+    meta itemprop='description' content="RubyConf PT 2016"
+    meta itemprop='image' content=""
+
+    javascript:
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'MISSING-TRACKING-CODE', 'auto');
+      ga('send', 'pageview');
+
+    // Preferred URL (rel="canonical")
+    - if current_page.data.preferred_url
+      link rel='canonical' href=current_page.data.preferred_url
+
+    = favicon_tag 'favicon.ico'
+    = favicon_tag 'favicon.ico', rel: 'apple-touch-icon', type: 'image/x-icon'
+
+  body class=page_classes
+    /[if lt IE 10]
+      p.browsehappy
+        | You are using an <strong>outdated</strong> browser. Please
+        | <a href="http://browsehappy.com/">Upgrade your browser to improve your experience!</a>
+
+    .Layout
+      = yield
+
+    = javascript_include_tag 'all'
+    = yield_content :javascripts
