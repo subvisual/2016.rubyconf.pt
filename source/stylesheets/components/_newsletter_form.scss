@@ -1,0 +1,51 @@
+$NewsletterForm-spacing: 10px;
+$NewsletterForm-input-bg: rgba(72, 208, 249, 0.2);
+$NewsletterForm-color: $color-greyish-brown;
+
+$NewsletterForm-input-responsive: (
+  height: (30px, 40px),
+  line-height: (30px, 40px),
+  padding: (0 10px, 0 20px)
+);
+
+$NewsletterForm-submit-responsive: (
+  max-width: (150px, 200px)
+);
+
+.NewsletterForm {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.NewsletterForm-label,
+.NewsletterForm-input {
+  margin-bottom: $NewsletterForm-spacing;
+
+  color: $NewsletterForm-color;
+}
+
+.NewsletterForm-label {
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.NewsletterForm-input {
+  @include font('base');
+  @include responsive($NewsletterForm-input-responsive);
+
+  border-radius: 50px;
+
+  outline: none;
+  border: none;
+
+  background-color: $NewsletterForm-input-bg;
+}
+
+.NewsletterForm-submit {
+  @include responsive($NewsletterForm-submit-responsive);
+
+  align-self: flex-end;
+}

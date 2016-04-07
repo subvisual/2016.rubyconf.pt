@@ -2,11 +2,23 @@
 @import 'include-media/dist/include-media';
 
 $breakpoints: (
-  'tablet': 650px,
+  'mobile': 650px,
   'desktop': 1024px
 );
 
+$font-family: 'brandon-grotesque';
+
 // Spacing
-$Theme-space-large: 60px;
-$Theme-space-base: 30px;
-$Theme-space-small: 15px;
+$space-small: 10px;
+$space-base: 40px;
+$space-large: 80px;
+$space-huge: 160px;
+
+$color-white: #fff;
+$color-grey: #999;
+$color-greyish-brown: #555;
+$color-sand: #fAfAf5;
+$color-dark-salmon: #ce6261;
+$color-azure: #2aa7f0;
+$color-blue: #48d0f9;
+$color-greenish-teal: #39d26c;

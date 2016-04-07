@@ -1,0 +1,41 @@
+$Text--red-color: $color-dark-salmon;
+$Text--blue-color: $color-blue;
+$Text--grey-color: $color-grey;
+$Text--green-color: $color-greenish-teal;
+
+.Text.large {
+  @include font('large');
+}
+
+.Text.huge {
+  @include font('huge');
+}
+
+.Text.strong {
+  font-weight: bold;
+}
+
+.Text.center {
+  text-align: center;
+}
+
+.Text.logoRed,
+.Text.logoBlue {
+  text-transform: uppercase;
+}
+
+.Text.red {
+  color: $Text--red-color;
+}
+
+.Text.blue {
+  color: $Text--blue-color;
+}
+
+.Text.green {
+  color: $Text--green-color;
+}
+
+.Text.grey {
+  color: $Text--grey-color;
+}

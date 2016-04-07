@@ -1,0 +1,18 @@
+// Constraints the element to a given size
+$Cage-sizes: (
+  base: 400px,
+);
+
+.Cage {
+  max-width: 100%;
+}
+
+@each $name, $value in $Cage-sizes {
+  .Cage.#{$name} {
+    width: $value;
+  }
+
+  .Cage.#{$name}AtMost {
+    max-width: $value;
+  }
+}

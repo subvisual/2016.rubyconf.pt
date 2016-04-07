@@ -1,0 +1,10 @@
+$Img-logo-responsive: (
+  width: (68px, 120px),
+  height: (60px, 110px)
+);
+
+.Img.logo {
+  @include responsive($Img-logo-responsive);
+
+  background-color: $color-dark-salmon;
+}

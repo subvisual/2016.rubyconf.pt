@@ -1,0 +1,42 @@
+$Speaker-title-color: $color-greenish-teal;
+$Speaker--master-title-color: $color-azure;
+
+$Speaker-photo-responsive: (
+  width: (200px, 250px),
+  height: (200px, 250px)
+);
+
+.Speaker {
+  text-align: center;
+}
+
+.Speaker-photo {
+  @include responsive($Speaker-photo-responsive);
+
+  border-radius: 50%;
+
+  background-color: $color-dark-salmon;
+}
+
+.Speaker-firstName,
+.Speaker-lastName {
+  @include font('large', $responsive: false);
+}
+
+.Speaker-lastName {
+  font-weight: bold;
+}
+
+.Speaker-title {
+  @include font('base', $responsive: false);
+  color: $Speaker-title-color;
+}
+
+.Speaker.master {
+  .Speaker-title {
+    color: $Speaker--master-title-color;
+  }
+}
+
+.Speaker.more {
+}
