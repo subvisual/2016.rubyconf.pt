@@ -1,4 +1,4 @@
-$Stitches-colors: (white red blue green);
+$Stitches-colors: ('white' 'red' 'blue' 'green');
 $Stitches-width: 20px;
 $Stitches-height: 10px;
 
@@ -23,14 +23,13 @@ $Stitches--small-height: 5px;
 
 .Stitches.top,
 .Stitches.bottom {
+  z-index: 2;
+
   width: 100%;
   height: $Stitches-height;
 
-  z-index: 2;
-
-  background-size: $Stitches-width $Stitches-height;
-
   background-repeat: repeat-x;
+  background-size: $Stitches-width $Stitches-height;
 }
 
 .Stitches.small.top,
@@ -42,14 +41,13 @@ $Stitches--small-height: 5px;
 
 .Stitches.left,
 .Stitches.right {
+  z-index: 3;
+
   width: $Stitches-height;
   height: 100%;
 
-  z-index: 3;
-
-  background-size: $Stitches-height $Stitches-width;
-
   background-repeat: repeat-y;
+  background-size: $Stitches-height $Stitches-width;
 }
 
 .Stitches.small.left,
@@ -90,12 +88,15 @@ $Stitches--small-height: 5px;
 .Stitches.out.top {
   transform: translateY(-100%);
 }
+
 .Stitches.out.bottom {
   transform: translateY(100%) scaleY(-1);
 }
+
 .Stitches.out.left {
   transform: translateX(-100%) scaleX(-1);
 }
+
 .Stitches.out.right {
   transform: translateX(100%);
 }

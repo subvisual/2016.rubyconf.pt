@@ -12,16 +12,17 @@ $Ticket-shadow-values: (
 .Ticket {
   @include responsive($Ticket-values);
 
+  position: relative;
+
   display: flex;
   flex-direction: row;
-
-  position: relative;
 }
 
 .Ticket:before {
   @include responsive($Ticket-shadow-values);
 
   content: '';
+
   position: absolute;
 
   background-color: rgba(0, 0, 0, 0.3);
@@ -31,8 +32,8 @@ $Ticket-shadow-values: (
 .Ticket-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .Ticket-logo {

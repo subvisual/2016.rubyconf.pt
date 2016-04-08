@@ -53,15 +53,15 @@ $Img-plants: (
   .Img.#{str-replace($key, '/', '-')} {
     $extension: map-get($values, 'extension');
     @if (not $extension) {
-      $extension: "png";
+      $extension: 'png';
     }
 
     @include responsive-background-image('/images/#{$key}', $extension: $extension);
     @include responsive(map-remove($values, 'extension'));
 
-    background-size: contain;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
