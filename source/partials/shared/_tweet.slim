@@ -1,0 +1,19 @@
+.Flex.row.u-relative
+  .Stitches.small.out.red.left
+
+  .u-smallPushRight
+
+  .Text
+    .Flex.row.alignCenter
+      img.Img.tweet src="/images/tweets/#{tweet.handle}.jpeg"
+      .u-smallPushRight
+      .Flex.column
+        .Text.blue.strong = tweet.author
+        a.Text.blue.link href=twitter_url(tweet) target="_blank"
+          | @
+          = tweet.handle
+
+    .u-basePushBottom
+
+    .Text.quote = tweet.text
+

@@ -14,11 +14,13 @@
         h1.Heading.primary Tickets
         .u-basePushBottom
 
-        p.Text.large.center RubyConf Portugal '16 has capacity for 300 people
+        p.Text.large.center RubyConf Portugal '16 has capacity for 300 people.
         .u-largePushBottom
 
-        .u-basePushBottom
-        = link_to "Submit a talk", "#", class: "Button blue"
+        = partial "shared/ticket"
+        .u-largePushBottom
+
+        = link_to "Buy a Ticket", data.links.tickets, class: "Button blue"
 
     .Flex.row.u-desktop
       .Img.plants-tall

@@ -7,7 +7,32 @@
   .u-hugePaddingBottom
   .Flex.column.alignCenter
     h1.Heading.primary About Last Year
+    .u-basePushBottom
 
+    .Img.plants-separator
+    .u-largePushBottom
+
+    .Memories
+      .Memories-1
+        = partial "shared/tweet", locals: { tweet: data.tweets[0] }
+        .u-largePushBottom
+      .Memories-2
+        = partial "shared/last_year_video"
+        .u-largePushBottom
+      .Memories-3
+        = partial "shared/tweet", locals: { tweet: data.tweets[1] }
+        .u-largePushBottom
+      .Memories-4
+        = partial "shared/last_year_photo", locals: { photo: data.links.last_year_photos[0] }
+        .u-largePushBottom
+      .Memories-5
+        = partial "shared/tweet", locals: { tweet: data.tweets[2] }
+        .u-largePushBottom
+      .Memories-6
+        = partial "shared/last_year_photo", locals: { photo: data.links.last_year_photos[1] }
+        .u-largePushBottom
+
+    .Img.plants-separator-alt
     p.Text.large.strong.center Don’t miss this!
     .u-basePushBottom
     p.Text.large.grey.center
@@ -15,4 +40,7 @@
       br
       | This year, we're aiming to top that. There's no way you'll want to stay out of this.
     .u-basePushBottom
+    = link_to "Buy Ticket", data.links.tickets, class: "Button red"
+    .u-basePushBottom
+    = link_to "Sponsor Us", data.links.sponsor, class: "Button blue"
   .u-hugePaddingBottom

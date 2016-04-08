@@ -1,4 +1,9 @@
-$Stitches-colors: (white red blue);
+$Stitches-colors: (white red blue green);
+$Stitches-width: 20px;
+$Stitches-height: 10px;
+
+$Stitches--small-width: 10px;
+$Stitches--small-height: 5px;
 
 .Stitches {
   position: absolute;
@@ -19,38 +24,49 @@ $Stitches-colors: (white red blue);
 .Stitches.top,
 .Stitches.bottom {
   width: 100%;
-  height: 10px;
+  height: $Stitches-height;
 
   z-index: 2;
 
-  background-size: 20px 10px;
+  background-size: $Stitches-width $Stitches-height;
 
   background-repeat: repeat-x;
 }
 
+.Stitches.small.top,
+.Stitches.small.bottom {
+  height: $Stitches--small-height;
+
+  background-size: $Stitches--small-width $Stitches--small-height;
+}
+
 .Stitches.left,
 .Stitches.right {
-  width: 10px;
+  width: $Stitches-height;
   height: 100%;
 
   z-index: 3;
 
-  background-size: 10px 20px;
+  background-size: $Stitches-height $Stitches-width;
 
   background-repeat: repeat-y;
+}
+
+.Stitches.small.left,
+.Stitches.small.right {
+  width: $Stitches--small-height;
+
+  background-size: $Stitches--small-height $Stitches--small-width;
 }
 
 .Stitches.top {
   top: 0;
   left: 0;
-
-  transform: scaleY(-1);
 }
 
 .Stitches.right {
+  top: 0;
   right: 0;
-
-  transform: scaleX(-1);
 }
 
 .Stitches.bottom {
@@ -59,6 +75,27 @@ $Stitches-colors: (white red blue);
 }
 
 .Stitches.left {
+  top: 0;
   left: 0;
 }
 
+.Stitches.right {
+  transform: scaleX(-1);
+}
+
+.Stitches.top {
+  transform: scaleY(-1);
+}
+
+.Stitches.out.top {
+  transform: translateY(-100%);
+}
+.Stitches.out.bottom {
+  transform: translateY(100%) scaleY(-1);
+}
+.Stitches.out.left {
+  transform: translateX(-100%) scaleX(-1);
+}
+.Stitches.out.right {
+  transform: translateX(100%);
+}

@@ -1,0 +1,11 @@
+$Media-values: (
+  width: (300px, 600px),
+  height: (160px, 315px),
+);
+
+.Media,
+.Media-content {
+  @include responsive($Media-values);
+
+  max-width: 100%;
+}

@@ -7,3 +7,12 @@
   .u-basePushBottom
 
   .Speaker-title = speaker.title
+  .u-basePushBottom
+
+  .Flex.row.justifyCenter
+    - if speaker.twitter
+      a.Img.icons-twitter target="_blank" href=twitter_url(speaker)
+    - if speaker.twitter && speaker.github
+      .u-basePushRight
+    - if speaker.github
+      a.Img.icons-github target="_blank" href=github_url(speaker)

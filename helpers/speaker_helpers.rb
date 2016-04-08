@@ -5,4 +5,12 @@ module SpeakerHelpers
     filename_with_ext = [filename, ext].join(".").gsub(" ", "-")
     "/images/speakers/#{filename_with_ext}"
   end
+
+  def twitter_url(speaker)
+    "https://twitter.com/#{speaker.twitter || speaker.handle}"
+  end
+
+  def github_url(speaker)
+    "https://github.com/#{speaker.github}"
+  end
 end

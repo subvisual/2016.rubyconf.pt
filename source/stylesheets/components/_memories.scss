@@ -1,0 +1,54 @@
+.Memories {
+  display: flex;
+}
+
+.Memories > * {
+  margin: auto;
+}
+
+@include desktop {
+  .Memories {
+    flex-flow: row wrap;
+  }
+
+  .Memories-2,
+  .Memories-5 {
+    flex-grow: 2;
+    width: 50%;
+  }
+
+  .Memories-1,
+  .Memories-3,
+  .Memories-4,
+  .Memories-6 {
+    flex-shrink: 1;
+    width: 25%;
+  }
+}
+
+@include mobile {
+  .Memories {
+    flex-direction: column;
+  }
+
+  .Memories-2 {
+    order: 1;
+  }
+
+  .Memories-1 {
+    order: 2;
+  }
+
+  .Memories-6 {
+    order: 3;
+  }
+
+  .Memories-3 {
+    order: 4;
+  }
+
+  .Memories-4,
+  .Memories-5 {
+    display: none;
+  }
+}

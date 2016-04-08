@@ -1,0 +1,52 @@
+$Ticket-values: (
+  width: (270px, 400px),
+  height: (150px, 220px),
+);
+
+$Ticket-shadow-values: (
+  width: (270px, 400px),
+  height: (150px, 220px),
+  filter: (blur(15px), blur(30px)),
+);
+
+.Ticket {
+  @include responsive($Ticket-values);
+
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+}
+
+.Ticket:before {
+  @include responsive($Ticket-shadow-values);
+
+  content: '';
+  position: absolute;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.Ticket-logo,
+.Ticket-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Ticket-logo {
+  flex: 1;
+
+  background-color: $color-white;
+}
+
+.Ticket-info {
+  flex: 2;
+
+  background-color: $color-seaweed;
+}
+
+.Ticket-innerInfo {
+  padding: 0 20px;
+}

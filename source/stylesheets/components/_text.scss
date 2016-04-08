@@ -2,6 +2,11 @@ $Text--red-color: $color-dark-salmon;
 $Text--blue-color: $color-blue;
 $Text--grey-color: $color-grey;
 $Text--green-color: $color-greenish-teal;
+$Text--white-color: $color-white;
+
+.Text {
+  color: $color-greyish-brown;
+}
 
 .Text.large {
   @include font('large');
@@ -38,4 +43,20 @@ $Text--green-color: $color-greenish-teal;
 
 .Text.grey {
   color: $Text--grey-color;
+}
+
+.Text.white {
+  color: $Text--white-color;
+}
+
+.Text.quote:before {
+  content: '“';
+}
+
+.Text.quote:after {
+  content: '”';
+}
+
+.Text.link {
+  text-decoration: none;
 }
