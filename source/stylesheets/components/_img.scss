@@ -1,10 +1,46 @@
-$Img-logo-responsive: (
-  width: (68px, 120px),
-  height: (60px, 110px)
+$Img-plants: (
+  'logo': (
+    width: (200px, 400px),
+    height: (55px, 110px),
+  ),
+  'plants/blue-flower': (
+    width: (50px, 100px),
+    height: (50px, 100px),
+  ),
+  'plants/separator': (
+    width: (150px, 200px),
+    height: (60px, 60px)
+  ),
+  'plants/separator-alt': (
+    width: (150px, 200px),
+    height: (60px, 60px)
+  ),
+  'plants/tall': (
+    width: (150px, 150px),
+    height: (490px, 490px)
+  ),
+  'plants/more-speakers': (
+    width: (254px, 254px),
+    height: (54px, 54px)
+  )
 );
 
-.Img.logo {
-  @include responsive($Img-logo-responsive);
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
 
-  background-color: $color-dark-salmon;
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+@each $key, $values in $Img-plants {
+  .Img.#{str-replace($key, '/', '-')} {
+    @include responsive-background-image('/images/#{$key}');
+    @include responsive($values);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

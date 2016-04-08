@@ -1,3 +1,5 @@
+require 'middleman-gh-pages'
+
 require "rubocop/rake_task"
 require "scss_lint"
 require "scss_lint/rake_task"

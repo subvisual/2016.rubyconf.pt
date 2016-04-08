@@ -13,3 +13,12 @@
 .Flex.alignCenter {
   align-items: center;
 }
+
+.Flex.spaceAround {
+  justify-content: space-around;
+}
+
+.Flex-grow {
+  flex-grow: 1;
+  max-width: 100%;
+}

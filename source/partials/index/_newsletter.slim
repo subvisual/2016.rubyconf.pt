@@ -1,14 +1,30 @@
-.Panel
+.Panel.u-relative
+  .Stitches.left.red
+  .Stitches.right.red
+
   .u-hugePaddingBottom
-  .Flex.column.alignCenter
-    h1.Heading.primary Subscribe to Our Newsletter
 
-    .u-largePushBottom
+  .Flex.row.alignCenter
+    .Flex.row.u-desktop
+      .u-largePushRight
+      .Img.plants-blue-flower
 
-    .Cage.base
-      .NewsletterForm
-        label.NewsletterForm-label for="newsletter_name" Your email
-        input.NewsletterForm-input id="newsletter_name"
-        .NewsletterForm-submit
-          .Button.blue Subscribe
+    .Flex-grow
+      .Flex.column.alignCenter
+        .Img.plants-blue-flower.u-basePushBottom.u-mobile
+
+        h1.Heading.primary Subscribe to Our Newsletter
+
+        .u-largePushBottom
+
+        .Cage.base
+          .NewsletterForm
+            label.NewsletterForm-label for="newsletter_name" Your email
+            input.NewsletterForm-input id="newsletter_name"
+            .NewsletterForm-submit
+              .Button.blue Subscribe
+
+    .Flex.row.u-desktop
+      .Img.plants-blue-flower
+      .u-largePushRight
   .u-hugePaddingBottom

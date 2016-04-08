@@ -14,8 +14,6 @@ $Speaker-photo-responsive: (
   @include responsive($Speaker-photo-responsive);
 
   border-radius: 50%;
-
-  background-color: $color-dark-salmon;
 }
 
 .Speaker-firstName,
@@ -39,4 +37,7 @@ $Speaker-photo-responsive: (
 }
 
 .Speaker.more {
+  .Speaker-photo {
+    border-radius: 0;
+  }
 }

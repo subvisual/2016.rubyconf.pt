@@ -2,10 +2,10 @@
   $regular_url: "#{$path}.#{$extension}";
   $retina_url:  "#{$path}@2x.#{$extension}";
 
-  background-image: asset-url($regular_url);
+  background-image: url($regular_url);
   background-size: $size;
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: asset-url($retina_url);
+    background-image: url($retina_url);
   }
 }
