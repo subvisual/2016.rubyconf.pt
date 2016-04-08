@@ -3,13 +3,25 @@
   .Stitches.right.red
 
   .u-hugePaddingBottom
-  .Flex.column.alignCenter
-    h1.Heading.primary Tickets
-    .u-basePushBottom
 
-    p.Text.large.center RubyConf Portugal '16 has capacity for 300 people
-    .u-largePushBottom
+  .Flex.row.alignCenter
+    .Flex.row.u-desktop
+      .u-largePushRight
+      .Img.plants-tall.u-invertedX
 
-    .u-basePushBottom
-    = link_to "Submit a talk", "#", class: "Button blue"
+    .Flex-grow
+      .Flex.column.alignCenter
+        h1.Heading.primary Tickets
+        .u-basePushBottom
+
+        p.Text.large.center RubyConf Portugal '16 has capacity for 300 people
+        .u-largePushBottom
+
+        .u-basePushBottom
+        = link_to "Submit a talk", "#", class: "Button blue"
+
+    .Flex.row.u-desktop
+      .Img.plants-tall
+      .u-largePushRight
+
   .u-hugePaddingBottom
