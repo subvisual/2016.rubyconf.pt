@@ -3,6 +3,9 @@ $Burger-width: 30px;
 $Burger-height: 50px;
 $Burger-line-offset: 10px;
 
+$Burger-color-start: #83ebaf;
+$Burger-color-end: #4cdb7e;
+
 .Burger {
   position: relative;
 
@@ -25,9 +28,10 @@ $Burger-line-offset: 10px;
   position: absolute;
 
   width: 100%;
-  height: 2px;
+  height: 4px;
+  border-radius: 4px;
 
-  background: $Burger-color;
+  background: linear-gradient(to right, $Burger-color-start, $Burger-color-end);
 }
 
 .Burger-line {
