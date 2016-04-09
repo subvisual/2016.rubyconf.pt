@@ -1,3 +1,4 @@
+$Speaker-padding: 0 $space-base;
 $Speaker-title-color: $color-greenish-teal;
 $Speaker--master-title-color: $color-azure;
 
@@ -8,6 +9,8 @@ $Speaker-photo-responsive: (
 
 .Speaker {
   text-align: center;
+
+  padding: $Speaker-padding;
 }
 
 .Speaker-photo {

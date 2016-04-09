@@ -4,6 +4,7 @@
 
 .Memories > * {
   margin: auto;
+  padding: 0 40px;
 }
 
 @include desktop {
@@ -29,6 +30,10 @@
 @include mobile {
   .Memories {
     flex-direction: column;
+  }
+
+  .Memories > * {
+    max-width: 300px;
   }
 
   .Memories-2 {

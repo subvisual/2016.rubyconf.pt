@@ -1,4 +1,4 @@
-.Panel.sand.u-relative
+#speakers.Panel.sand.u-relative
   .Stitches.top.white
   .Stitches.left.blue
   .Stitches.right.blue
@@ -12,9 +12,9 @@
     .Img.plants-separator
     .u-largePushBottom
 
-    - data.speakers.each do |speaker|
-      = partial "shared/speaker", locals: { speaker: speaker }
-      .u-largePushBottom
+    .Flex.row.wrap.justifyCenter
+      - data.speakers.each do |speaker|
+        = partial "shared/speaker", locals: { speaker: speaker }
 
     .Img.plants-separator-alt
     p.Text.large.strong.center Want to be part of this amazing lineup of speakers?

@@ -1,0 +1,4 @@
+.Flex.row.justifyEnd
+  - data.menu.each do |item|
+    a.NavLink href=(item.url || data.links[item.link_key]) = item.text
+    .u-basePushRight

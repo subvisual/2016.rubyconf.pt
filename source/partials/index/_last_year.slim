@@ -7,7 +7,7 @@
   .u-hugePaddingBottom
   .Flex.column.alignCenter
     h1.Heading.primary About Last Year
-    .u-basePushBottom
+    .u-smallPushBottom
 
     .Img.plants-separator
     .u-largePushBottom
@@ -40,7 +40,9 @@
       br
       | This year, we're aiming to top that. There's no way you'll want to stay out of this.
     .u-basePushBottom
-    = link_to "Buy Ticket", data.links.tickets, class: "Button red"
-    .u-basePushBottom
-    = link_to "Sponsor Us", data.links.sponsor, class: "Button blue"
+
+    .Flex.row-desktop.column-mobile
+      = link_to "Buy Ticket", data.links.tickets, class: "Button red"
+      .u-basePushRight.u-basePushBottom
+      = link_to "Sponsor Us", data.links.sponsor, class: "Button blue"
   .u-hugePaddingBottom

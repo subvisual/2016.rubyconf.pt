@@ -1,0 +1,13 @@
+$NavLink-height: 60px;
+$NavLink-color: $color-dark-salmon;
+
+.NavLink {
+  height: $NavLink-height;
+
+  line-height: $NavLink-height;
+
+  color: $NavLink-color;
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
