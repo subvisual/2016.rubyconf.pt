@@ -1,4 +1,18 @@
-.Flex.row.justifyEnd
+.u-desktop.Flex.row.justifyEnd
   - data.menu.each do |item|
     a.NavLink href=(item.url || data.links[item.link_key]) = item.text
     .u-basePushRight
+
+.u-mobile
+  .Flex.row.justifyEnd
+    #Burger.Burger
+      .Burger-line
+      .Burger-line
+      .Burger-line
+    .u-basePushRight
+
+  #Overlay.Overlay
+    .Flex.column.alignCenter
+      - data.menu.each do |item|
+        a.NavLink href=(item.url || data.links[item.link_key]) = item.text
+        .u-basePushRight
