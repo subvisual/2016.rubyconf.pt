@@ -12,17 +12,17 @@
     .u-largePushBottom
 
     .Memories
-      .Memories-1.u-largePushBottom
+      .Memories-1
         = partial "shared/tweet", locals: { tweet: data.tweets[0] }
-      .Memories-2.u-largePushBottom
+      .Memories-2
         = partial "shared/last_year_video"
-      .Memories-3.u-largePushBottom
+      .Memories-3
         = partial "shared/tweet", locals: { tweet: data.tweets[1] }
-      .Memories-4.u-largePushBottom
+      .Memories-4
         = partial "shared/last_year_photo", locals: { photo: data.links.last_year_photos[0] }
-      .Memories-5.u-largePushBottom
+      .Memories-5
         = partial "shared/tweet", locals: { tweet: data.tweets[2] }
-      .Memories-6.u-largePushBottom
+      .Memories-6
         = partial "shared/last_year_photo", locals: { photo: data.links.last_year_photos[1] }
 
     .u-largePushBottom

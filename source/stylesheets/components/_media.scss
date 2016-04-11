@@ -1,11 +1,36 @@
-$Media-values: (
+$Media--youtube-values: (
   width: (300px, 600px),
   height: (160px, 315px),
 );
 
 .Media,
 .Media-content {
-  @include responsive($Media-values);
+  width: 600px;
 
   max-width: 100%;
+}
+
+.Media.aspect-ratio {
+  position: relative;
+
+  .Media-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.Media.three-by-two {
+  padding-bottom: 66%;
+}
+
+.Media.youtube {
+  @include responsive($Media--youtube-values);
+
+  .Media-content {
+    width: 100%;
+    height: 100%;
+  }
 }
