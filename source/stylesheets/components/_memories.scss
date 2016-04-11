@@ -12,7 +12,9 @@
 @include desktop {
   .Memories {
     flex-flow: row wrap;
+  }
 
+  .Memories > * {
     padding: 40px 40px;
   }
 
