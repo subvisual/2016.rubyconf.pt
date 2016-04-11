@@ -6,6 +6,14 @@ $spacings: (
 );
 
 @each $name, $value in $spacings {
+  .u-#{$name}PushBottomAlways {
+    margin-bottom: $value;
+  }
+
+  .u-#{$name}PaddingBottomAlways {
+    padding-bottom: $value;
+  }
+
   .u-#{$name}PushBottom {
     @include mobile {
       margin-bottom: $value * 0.5;

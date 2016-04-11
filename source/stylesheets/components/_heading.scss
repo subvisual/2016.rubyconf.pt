@@ -1,3 +1,7 @@
+.Heading {
+  @include font('huge');
+}
+
 .Heading.primary {
   @include font('huge');
 

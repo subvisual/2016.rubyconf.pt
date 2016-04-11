@@ -25,12 +25,24 @@ $Button-responsive: (
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  transition: background-color 0.2s ease-out;
+
+  cursor: pointer;
 }
 
 .Button.red {
   background-color: $Button--red-bg-color;
+
+  &:hover {
+    background-color: darken($Button--red-bg-color, 10%);
+  }
 }
 
 .Button.blue {
   background-color: $Button--blue-bg-color;
+
+  &:hover {
+    background-color: darken($Button--blue-bg-color, 10%);
+  }
 }

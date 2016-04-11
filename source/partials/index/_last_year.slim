@@ -7,38 +7,34 @@
   .u-hugePaddingBottom
   .Flex.column.alignCenter
     h1.Heading.primary About Last Year
-    .u-smallPushBottom
 
     .Img.plants-separator
     .u-largePushBottom
 
     .Memories
-      .Memories-1
+      .Memories-1.u-largePushBottom
         = partial "shared/tweet", locals: { tweet: data.tweets[0] }
-        .u-largePushBottom
-      .Memories-2
+      .Memories-2.u-largePushBottom
         = partial "shared/last_year_video"
-        .u-largePushBottom
-      .Memories-3
+      .Memories-3.u-largePushBottom
         = partial "shared/tweet", locals: { tweet: data.tweets[1] }
-        .u-largePushBottom
-      .Memories-4
+      .Memories-4.u-largePushBottom
         = partial "shared/last_year_photo", locals: { photo: data.links.last_year_photos[0] }
-        .u-largePushBottom
-      .Memories-5
+      .Memories-5.u-largePushBottom
         = partial "shared/tweet", locals: { tweet: data.tweets[2] }
-        .u-largePushBottom
-      .Memories-6
+      .Memories-6.u-largePushBottom
         = partial "shared/last_year_photo", locals: { photo: data.links.last_year_photos[1] }
-        .u-largePushBottom
 
+    .u-largePushBottom
     .Img.plants-separator-alt
-    p.Text.large.strong.center Don’t miss this!
     .u-basePushBottom
-    p.Text.large.grey.center
-      | Last year was unforgettable for everyone involved.
-      br
-      | This year, we're aiming to top that. There's no way you'll want to stay out of this.
+    p.Text.large.strong.center Don’t miss this!
+    .u-smallPushBottom
+    .Cage.large
+      p.Text.large.grey.center
+        | Last year was unforgettable for everyone involved.
+        br
+        | This year, we're aiming to top that. There's no way you'll want to stay out of this.
     .u-basePushBottom
 
     .Flex.row-desktop.column-mobile

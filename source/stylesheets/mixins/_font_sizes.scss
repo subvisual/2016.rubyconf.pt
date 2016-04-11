@@ -18,7 +18,6 @@ $default-font-sizes: (
   $desktop-size: map-get(map-get($font-sizes, 'desktop'), $size);
 
   @if ($responsive) {
-
     @include mobile {
       @include single-font-size($mobile-size, $line-height)
     }

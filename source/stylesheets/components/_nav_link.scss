@@ -10,4 +10,8 @@ $NavLink-color: $color-dark-salmon;
 
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    color: darken($NavLink-color, 10%);
+  }
 }

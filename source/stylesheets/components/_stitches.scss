@@ -1,4 +1,4 @@
-$Stitches-colors: ('white' 'red' 'blue' 'green');
+$Stitches-colors: ('white' 'red' 'blue' 'green' 'pink');
 $Stitches-width: 20px;
 $Stitches-height: 10px;
 
@@ -24,12 +24,12 @@ $Stitches--small-height: 5px;
 .Stitches.top,
 .Stitches.bottom {
   z-index: 2;
-
   width: 100%;
   height: $Stitches-height;
 
   background-repeat: repeat-x;
   background-size: $Stitches-width $Stitches-height;
+
 }
 
 .Stitches.small.top,

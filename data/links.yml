@@ -1,7 +1,9 @@
-tickets: '#'
-cfp: '#'
+tickets: 'https://ti.to/'
+cfp: 'https://www.papercall.io/rubyconfpt-2016'
 sponsor: '#'
 last_year_video: 'https://www.youtube.com/embed/8H8d-mGYjgw'
 last_year_photos:
-  - '#'
-  - '#'
+  - preview: '/images/photos/2015-01-preview.png'
+    large: '/images/photos/2015-01-large.png'
+  - preview: '/images/photos/2015-02-preview.png'
+    large: '/images/photos/2015-02-large.png'
