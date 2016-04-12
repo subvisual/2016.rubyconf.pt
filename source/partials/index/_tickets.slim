@@ -4,10 +4,11 @@
 
   .u-hugePaddingBottom
 
-  .Flex.row.alignCenter
+  .Flex.row.alignCenter#trigger-tall
     .Flex.row.u-desktop
       .u-largePushRight
-      .Img.plants-tall.u-invertedX
+      .u-invertedX
+        = inline_svg "plants/tall.svg", "tall1"
 
     .Flex-grow
       .Flex.column.alignCenter
@@ -27,7 +28,7 @@
           .Img.plants-tall-mobile
 
     .Flex.row.u-desktop
-      .Img.plants-tall
+      = inline_svg "plants/tall.svg", "tall2"
       .u-largePushRight
 
   .u-hugePaddingBottom.u-desktop

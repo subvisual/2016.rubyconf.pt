@@ -5,3 +5,9 @@ body {
 
   font-family: $font-family;
 }
+
+svg {
+  max-width: 100%;
+
+  overflow: visible;
+}

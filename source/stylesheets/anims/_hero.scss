@@ -1,0 +1,12 @@
+#hero-Anim-branches {
+  path[id^=hero-leaf],
+  ellipse:not([id^=hero-Oval]),
+  circle:not([id^=hero-Oval]) {
+    transform: scale(0);
+  }
+
+  path {
+    stroke-dasharray: 100000;
+    stroke-dashoffset: 100002;
+  }
+}

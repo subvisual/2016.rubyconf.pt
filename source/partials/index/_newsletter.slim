@@ -1,4 +1,4 @@
-.Panel.u-relative
+.Panel.u-relative#trigger-blueFlower
   .Stitches.left.red
   .Stitches.right.red
 
@@ -7,11 +7,14 @@
   .Flex.row.alignCenter
     .Flex.row.u-desktop
       .u-largePushRight
-      .Img.plants-blue-flower
+      .u-invertedX
+        = inline_svg "plants/blue_flower.svg", "blue1"
 
     .Flex-grow
       .Flex.column.alignCenter
-        .Img.plants-blue-flower.u-basePushBottom.u-mobile
+        .u-mobile
+          .Img.plants-blue-flower
+          .u-basePushBottom
 
         h1.Heading.primary Subscribe to Our Newsletter
 
@@ -27,7 +30,7 @@
               input id="mce-hidden-input" type="text" name="b_94c5a4b768054f20f78d0056a_d1f74d03dd" tabindex="-1" value=""
 
     .Flex.row.u-desktop
-      .Img.plants-blue-flower
+      = inline_svg "plants/blue_flower.svg", "blue2"
       .u-largePushRight
 
   .u-hugePaddingBottom

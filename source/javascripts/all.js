@@ -1,4 +1,11 @@
+//= require velocity/velocity
 //= require jquery
 //= require lodash/dist/lodash
+//= require scrollmagic
 //= require _nav
 //= require _panels
+//= require anims/_shared
+//= require anims/_blue_flower
+//= require anims/_hero
+//= require anims/_tall
+//= require anims/_scroll_controller
