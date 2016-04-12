@@ -18,11 +18,13 @@
         .u-basePushBottom
 
         .Cage.base
-          .NewsletterForm
+          form.NewsletterForm action=data.links.mailchimp method="post"
             label.NewsletterForm-label for="newsletter_name" Your email
-            input.NewsletterForm-input id="newsletter_name"
+            input.NewsletterForm-input id="newsletter_name" name="EMAIL"
             .NewsletterForm-submit
-              .Button.blue Subscribe
+              input.Button.blue type="submit" value="Subscribe"
+            div style="position: absolute; left: -5000px;"
+              input id="mce-hidden-input" type="text" name="b_94c5a4b768054f20f78d0056a_d1f74d03dd" tabindex="-1" value=""
 
     .Flex.row.u-desktop
       .Img.plants-blue-flower
