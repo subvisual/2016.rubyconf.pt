@@ -1,6 +1,4 @@
-# We are Subvisual
-
-We are subvisual and this is our website.
+# [RubyConf PT 2016](http://rubyconf.pt)
 
 ## Development
 
