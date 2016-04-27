@@ -7,10 +7,14 @@ $Speaker-photo-responsive: (
   height: (200px, 250px)
 );
 
-.Speaker {
-  text-align: center;
+$Speaker-title-responsive: (
+  max-width: map-get($Speaker-photo-responsive, width)
+);
 
+.Speaker {
   padding: $Speaker-padding;
+
+  text-align: center;
 }
 
 .Speaker-photo {
@@ -30,6 +34,8 @@ $Speaker-photo-responsive: (
 
 .Speaker-title {
   @include font('base', $responsive: false);
+  @include responsive($Speaker-title-responsive);
+
   color: $Speaker-title-color;
 }
 

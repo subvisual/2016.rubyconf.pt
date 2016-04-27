@@ -4,6 +4,12 @@
   twitter: tenderlove
   github: tenderlove
 
+- first_name: Sean
+  last_name: Griffin
+  title: Rails Commiter, ActiveRecord Maintainer, Creator of Diesel
+  twitter: sgrif
+  github: sgrif
+
 - first_name: Searching for
   last_name: More
   classes: more
