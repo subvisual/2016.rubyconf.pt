@@ -9,5 +9,7 @@ $(() => {
     e.preventDefault();
     e.stopPropagation();
   });
+
+  $('#Overlay').on('click', 'a', toggleNav);
 });
 
