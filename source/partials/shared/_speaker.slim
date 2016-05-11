@@ -1,6 +1,8 @@
 .Speaker class=speaker.classes
   img.Speaker-photo src=photo_path(speaker)
-  .Speaker-photoOverlay
+  - unless speaker.placeholder
+    .Speaker-photoOverlay
+      .Img.plants-speaker-overlay
   .u-basePushBottom
 
   .Speaker-firstName = speaker.first_name

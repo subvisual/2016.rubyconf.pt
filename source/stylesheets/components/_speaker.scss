@@ -19,36 +19,23 @@ $Speaker-title-responsive: (
   position: relative;
 }
 
-.Speaker:not(:last-of-type) .Speaker-photoOverlay {
-  @include responsive($Speaker-photo-responsive);
-
-  position: absolute;
-  top: 0;
-
-  background-image: url('/images/photo-frame.png');
-  background-size: 100% 100%;
-}
-
-@for $i from 1 through 10 {
-  .Speaker:nth-of-type(#{$i}) {
-    $rotation: $i * 20;
-
-    .Speaker-photoOverlay {
-      transform: rotateZ(#{$rotation}deg) scale(1.15);
-      transition: all 0.3s ease-in-out;
-
-      &:hover {
-        $rotation: $i * 20 + 5;
-        transform: rotateZ(#{$rotation}deg) scale(1.15);
-      }
-    }
-  }
-}
-
 .Speaker-photo {
   @include responsive($Speaker-photo-responsive);
 
   border-radius: 50%;
+}
+
+.Speaker-photoOverlay {
+  position: absolute;
+  top: 0;
+
+  @include mobile {
+    transform: translateY(197px) translateY(-50%);
+  }
+
+  @include desktop {
+    transform: translateY(245px) translateY(-50%);
+  }
 }
 
 .Speaker-firstName,
