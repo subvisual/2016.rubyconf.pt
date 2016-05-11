@@ -93,3 +93,12 @@ $Img--tweet-values: (
 .Img.icons-github {
   background-image: url("/images/icons/github.svg");
 }
+
+.Img.logo-nav {
+  @include responsive-background-image('/images/logo');
+
+  width: 144px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

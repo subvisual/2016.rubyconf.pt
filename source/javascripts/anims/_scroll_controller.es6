@@ -1,4 +1,4 @@
-$(function() {
+function setupLandingAnimations() {
   const controller = new ScrollMagic.Controller();
 
   const velocityAnimationOnScroll = function(element, prefixes, animatorClass) {
@@ -21,4 +21,4 @@ $(function() {
   velocityAnimationOnScroll("#trigger-hero", ["hero"], HeroAnim);
   velocityAnimationOnScroll("#trigger-tall", ["tall1", "tall2"], TallAnim);
   velocityAnimationOnScroll("#trigger-blueFlower", ["blue1", "blue2"], BlueFlowerAnim);
-})
+}

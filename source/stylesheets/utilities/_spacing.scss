@@ -44,6 +44,11 @@ $spacings: (
     }
   }
 
+  .u-#{$name}PushBottom-mobile {
+    @include mobile {
+      margin-bottom: $value;
+    }
+  }
 
   .u-#{$name}PushBottom-desktop {
     @include desktop {

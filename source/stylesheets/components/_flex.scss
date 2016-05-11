@@ -10,18 +10,6 @@
   flex-direction: column;
 }
 
-.Flex.row-desktop {
-  @include desktop {
-    flex-direction: row;
-  }
-}
-
-.Flex.column-mobile {
-  @include mobile {
-    flex-direction: column;
-  }
-}
-
 .Flex.wrap {
   flex-wrap: wrap;
 }
@@ -42,7 +30,31 @@
   justify-content: space-around;
 }
 
+.Flex.spaceBetween {
+  justify-content: space-between;
+}
+
 .Flex-grow {
   flex-grow: 1;
   max-width: 100%;
+}
+
+@include mobile {
+  .Flex.column-mobile {
+    flex-direction: column;
+  }
+
+  .Flex.justifyCenter-mobile {
+    justify-content: center;
+  }
+}
+
+@include desktop {
+  .Flex.row-desktop {
+    flex-direction: row;
+  }
+
+  .Flex.justifyEnd-desktop {
+    justify-content: flex-end;
+  }
 }

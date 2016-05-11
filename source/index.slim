@@ -2,9 +2,13 @@
 title: RubyConf Portugal 2016
 ---
 
+= partial "nav", locals: { noLogo: true }
 = partial "index/hero"
 = partial "index/newsletter"
 = partial "index/speakers"
 = partial "index/tickets"
 = partial "index/last_year"
-= partial "footer"
+
+- content_for :javascripts
+  javascript:
+    $(setupLandingAnimations);

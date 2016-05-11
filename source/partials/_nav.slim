@@ -1,13 +1,21 @@
+- noLogo ||= false
+
 .Panel.sand.u-relative
   .Stitches.top.blue
   .Stitches.left.blue
   .Stitches.right.blue
 
   .u-smallPaddingBottom
-  .u-desktop.Flex.row.justifyEnd
-    - data.menu.each do |item|
-      a.NavLink href=(item.url || data.links[item.link_key]) = item.text
-      .u-basePushRight
+  .u-desktop.Flex.row.spaceBetween.alignCenter
+    - if noLogo
+      div
+    - else
+      = link_to "/"
+        .Img.logo-nav
+    .Flex.row
+      - data.menu.each do |item|
+        a.NavLink href=(item.url || data.links[item.link_key]) = item.text
+        .u-basePushRight
 
   .u-mobile
     .Flex.row.justifyEnd
