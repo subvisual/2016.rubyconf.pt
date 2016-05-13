@@ -5,14 +5,18 @@ $Media--youtube-values: (
 
 .Media,
 .Media-content {
-  width: 600px;
+  position: relative;
 
-  max-width: 100%;
+  width: 100%;
+
+  max-width: 600px;
+}
+
+.Media-content {
+  display: block;
 }
 
 .Media.aspect-ratio {
-  position: relative;
-
   .Media-content {
     position: absolute;
     top: 0;
