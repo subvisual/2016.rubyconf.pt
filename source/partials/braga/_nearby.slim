@@ -1,0 +1,28 @@
+.u-hugePaddingBottom
+.Flex.column.alignCenter
+  h1.Heading.primary Cities nearby
+
+  .Img.plants-separator
+  .u-largePushBottom
+
+  .Flex.row-desktop.column-mobile.alignCenter-mobile
+    .Cage.bragaNearbyAtMost
+      .Flex.column
+        = partial "shared/braga_photo", locals: { photo: "/images/braga/guimaraes.png", frame: "orange" }
+        .u-smallPushBottom
+        p.Text.center Guimarães - 25km
+        .u-basePushBottom
+        .Flex.justifyCenter
+          = link_to "What to do", data.links.more_guimaraes, target: "_blank", class: "Button blue"
+
+    .u-largePushRight.u-largePushBottom
+
+    .Cage.bragaNearbyAtMost
+      .Flex.column
+        = partial "shared/braga_photo", locals: { photo: "/images/braga/porto.png", frame: "pink" }
+        .u-smallPushBottom
+        p.Text.center Porto - 55km
+        .u-basePushBottom
+        .Flex.justifyCenter
+          = link_to "What to do", data.links.more_porto, target: "_blank", class: "Button red"
+  .u-xLargePushBottom

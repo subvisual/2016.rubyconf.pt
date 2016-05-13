@@ -1,0 +1,29 @@
+.u-hugePaddingBottom
+.Flex.column.alignCenter
+  h1.Heading.primary 3 things you must eat in Braga
+
+  .Img.plants-separator
+  .u-largePushBottom
+
+  .Flex.row-desktop.column-mobile.alignCenter-mobile
+    .Cage.bragaSmallAtMost
+      .Flex.column
+        = partial "shared/braga_photo", locals: { photo: "/images/braga/natas.png", frame: "blue" }
+        .u-smallPushBottom
+        p.Text.center Nata at #{link_to "Casa das Natas", data.links.places.casa_das_natas, class: "Text link strong", target: "_blank"}
+
+    .u-largePushRight.u-largePushBottom
+
+    .Cage.bragaLargeAtMost
+      .Flex.column
+        = partial "shared/braga_photo", locals: { photo: "/images/braga/belga.png", frame: "pink" }
+        .u-smallPushBottom
+        p.Text.center "Francesinhas" at #{link_to "Taberna Bela", data.links.places.taberna_belga, class: "Text link strong", target: "_blank"}
+
+    .u-largePushRight.u-largePushBottom
+
+    .Cage.bragaSmallAtMost
+      .Flex.column
+        = partial "shared/braga_photo", locals: { photo: "/images/braga/berlim.png", frame: "blue" }
+        .u-smallPushBottom
+        p.Text.center Bola de Berlim at #{link_to "Casa das Bolas de Berlim", data.links.places.bolas_berlim, class: "Text link strong", target: "_blank"}

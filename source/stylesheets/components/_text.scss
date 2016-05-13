@@ -16,7 +16,8 @@ $Text--white-color: $color-white;
   @include font('huge');
 }
 
-.Text.strong {
+.Text.strong,
+.Text-strong {
   font-weight: bold;
 }
 

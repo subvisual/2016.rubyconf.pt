@@ -2,9 +2,16 @@ tickets: 'https://ti.to/subvisual/rubyconfpt-2016'
 cfp: 'https://www.papercall.io/rubyconfpt-2016'
 sponsor: '/sponsoring.pdf'
 mailchimp: '//rubyconf.us8.list-manage.com/subscribe?u=94c5a4b768054f20f78d0056a&id=c29bdd7a57'
+more_about_braga: 'http://www.bragacool.com/en'
+more_guimaraes: 'http://www.guimaraesturismo.com/'
+more_porto: 'http://www.visitporto.travel/Visitar/Paginas/default.aspx'
 last_year_video: 'https://www.youtube.com/embed/8H8d-mGYjgw'
 last_year_photos:
   - preview: '/images/photos/2015-01-preview.jpeg'
     large: '/images/photos/2015-01-large.jpeg'
   - preview: '/images/photos/2015-02-preview.jpeg'
     large: '/images/photos/2015-02-large.jpeg'
+places:
+  casa_das_natas: https://www.tripadvisor.com/ShowUserReviews-g189154-d4327463-r306586545-Nata_Lisboa-Cascais_Lisbon_District_Central_Portugal.html
+  taberna_belga: https://www.tripadvisor.com/Restaurant_Review-g189171-d1792887-Reviews-Taberna_Belga-Braga_Braga_District_Northern_Portugal.html
+  bolas_berlim: https://www.tripadvisor.com.br/Restaurant_Review-g189171-d5988351-Reviews-Casa_Bolas_de_Berlim-Braga_Braga_District_Northern_Portugal.html

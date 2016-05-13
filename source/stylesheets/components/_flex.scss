@@ -47,6 +47,10 @@
   .Flex.justifyCenter-mobile {
     justify-content: center;
   }
+
+  .Flex.alignCenter-mobile {
+    align-items: center;
+  }
 }
 
 @include desktop {
