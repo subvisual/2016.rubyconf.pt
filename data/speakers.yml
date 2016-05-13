@@ -4,6 +4,12 @@
   twitter: tenderlove
   github: tenderlove
 
+- first_name: Martin
+  last_name: Fowler
+  title: Software Development Loudmouth
+  twitter: martinfowler
+  github: martinfowler
+
 - first_name: Sean
   last_name: Griffin
   title: Rails Commiter, ActiveRecord Maintainer, Creator of Diesel
@@ -16,11 +22,11 @@
   twitter: kerrizor
   github: kerrizor
 
-- first_name: Martin
-  last_name: Fowler
-  title: Software Development Loudmouth
-  twitter: martinfowler
-  github: martinfowler
+- first_name: Yehuda
+  last_name: Katz
+  title: Ember.js Creator and Open Source Addict
+  twitter: wycats
+  github: wycats
 
 - first_name: Searching for
   last_name: More
