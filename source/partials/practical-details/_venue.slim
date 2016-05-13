@@ -1,0 +1,30 @@
+.u-hugePaddingBottom
+.Flex.column.alignCenter
+  h1.Heading.primary Venue
+
+  .Img.plants-separator
+  .u-largePushBottom
+
+  .Flex.row-desktop.column-mobile.alignCenter-mobile
+    .Cage.largeAtMost
+      p.Text.strong.large Braga
+      br
+      p.Text One of the oldest portuguese cities, established in Roman times as Bracara Avgvsta, Braga is nowadays a young city, full of traditions and places to visit.
+
+      .u-basePushBottom
+
+      = partial "shared/braga_photo", locals: { photo: "/images/braga/braga.png", width: 452, frame: "blue" }
+
+    .u-largePushRight.u-largePushBottom
+
+    .Cage.largeAtMost
+      = partial "shared/braga_photo", locals: { photo: "/images/braga/vita.png", width: 452, frame: "blue" }
+
+      .u-basePushBottom
+
+      p.Text.strong.large Auditório Vita
+      br
+      p.Text The venue for RubyConf PT will be Auditório Vita, a beautiful piece of architecture. Only 5 minutes away from downtown, this is the perfect place to welcome you.
+
+  .u-hugePushBottom
+

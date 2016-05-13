@@ -1,0 +1,31 @@
+h3.Text.large.blue.strong = hotel.name
+.u-xSmallPushBottom
+
+.Flex.row
+  - hotel.stars.downto(1)
+    p.Text.xLarge.yellow.u-xSmallPushRight ★
+.u-smallPushBottom
+
+.Flex.row-desktop.column-mobile
+  .Flex.column
+    p.Text.xLarge.strong = hotel.single_price
+    .u-xSmallPushBottom
+    p.Text.small.transparent.strong single
+
+  .u-basePushRight
+
+  .Flex.column
+    p.Text.xLarge.strong = hotel.double_price
+    .u-xSmallPushBottom
+    p.Text.small.transparent.strong double
+
+  .u-basePushRight
+
+  .Flex.column.justifyEnd
+    = link_to hotel.email, "mailto:#{hotel.email}", class: "Text small strong red link"
+    .u-xSmallPushBottom
+    p.Text.small.strong.red = hotel.phone
+.u-basePushBottom
+p.Text.grey.small
+  ' Walking distance to the venue:
+  = hotel.distance

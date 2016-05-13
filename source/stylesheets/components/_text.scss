@@ -3,6 +3,7 @@ $Text--blue-color: $color-blue;
 $Text--grey-color: $color-grey;
 $Text--green-color: $color-greenish-teal;
 $Text--white-color: $color-white;
+$Text--yellow-color: $color-sun-yellow;
 
 .Text {
   color: $color-greyish-brown;
@@ -10,6 +11,10 @@ $Text--white-color: $color-white;
 
 .Text.large {
   @include font('large');
+}
+
+.Text.xLarge {
+  @include font('xLarge');
 }
 
 .Text.huge {
@@ -48,6 +53,14 @@ $Text--white-color: $color-white;
 
 .Text.white {
   color: $Text--white-color;
+}
+
+.Text.yellow {
+  color: $Text--yellow-color;
+}
+
+.Text.transparent {
+  opacity: 0.8;
 }
 
 .Text.quote:before {

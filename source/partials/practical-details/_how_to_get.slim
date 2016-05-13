@@ -1,0 +1,81 @@
+.u-hugePaddingBottom
+.Flex.column.alignCenter
+  h1.Heading.primary How to get to Portugal
+
+  .Img.plants-separator
+  .u-largePushBottom
+
+  .Flex.row-desktop.column-mobile
+    .Flex-half
+      .Cage.details
+        p.Text.strong.large.blue Airport Francisco Sá Carneiro @ Porto (OPO)
+        .u-basePushBottom
+        p.Text 55km from Braga (see its #{link_to "airline companies", data.links.airports.opo, class: "Text link strong", target: "_blank"})
+
+    .u-basePushRight.u-largePushBottom
+
+    .Flex-half
+      .Cage.details
+        p.Text.strong.large.blue Aiport Portela @ Lisboa (LIS)
+        .u-basePushBottom
+        p.Text 360km from Braga (see its #{link_to "airline companies", data.links.airports.lis, class: "Text link strong", target: "_blank"})
+
+  .u-hugePushBottom
+
+  h1.Heading.primary How to get to Braga, Portugal
+
+  .Img.plants-separator
+  .u-largePushBottom
+
+  .Flex.row-desktop.column-mobile
+    .Flex-half
+      .Cage.details
+        p.Text.strong.large.blue By Bus
+        .u-basePushBottom
+        p.Text At the OPorto airport (OPO), you can catch a direct bus with a service called #{link_to "GetBus", data.links.getbus, class: "Text link strong", target: "_blank"})
+
+    .u-basePushRight.u-largePushBottom
+
+    .Flex-half
+      .Cage.details
+        p.Text.strong.large.blue By Train
+        .u-basePushBottom
+        p.Text Train Station Porto Campanhã @ Porto - 1h to Braga Train Station
+        br
+        p.Text Train Station Lisboa Oriente @ Lisboa - 4h to Braga Train Station
+        br
+        p.Text More information at #{link_to data.links.cp.name, data.links.cp.url, class: "Text strong link", target: "_blank"}
+
+  .u-hugePushBottom
+
+  h1.Heading.primary How to get to Theatro Circo, Braga, Portugal
+
+  .Img.plants-separator
+  .u-largePushBottom
+
+  .Flex.row-desktop.column-mobile
+    .Flex-half
+      .Cage.details
+        p.Text.strong.large.blue Coordinates
+        .u-basePushBottom
+        p.Text 41º 32' 59' N, 8º 25' 20' O
+
+    .u-basePushRight.u-largePushBottom
+
+    .Flex-half
+      .Cage.details
+        p.Text.strong.large.blue Address
+        .u-basePushBottom
+        p.Text Avenida da Liberdade, 697, 4710-251 Braga
+        br
+        p.Text
+          | You can see public transportation's schedules #{link_to "here", "#", class: "Text link strong", target: "_blank"} and check a #{link_to "map", "#", class: "Text link strong", target: "_blank"}
+          br
+          | to find the best way to get to the venue.
+
+  .u-largePushBottom
+
+  .Cage.detailsFull.max70Percent
+    iframe src=data.links.google_maps width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""
+
+  .u-basePushBottom

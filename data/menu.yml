@@ -4,6 +4,9 @@
 - text: Speakers
   url: '/#speakers'
 
+- text: Practical Details
+  url: '/practical-details'
+
 - text: Buy Ticket
   url: '/#tickets'
 

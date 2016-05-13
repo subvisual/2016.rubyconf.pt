@@ -39,6 +39,12 @@
   max-width: 100%;
 }
 
+.Flex-half {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 50%;
+}
+
 @include mobile {
   .Flex.column-mobile {
     flex-direction: column;

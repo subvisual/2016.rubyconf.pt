@@ -10,22 +10,6 @@
     p.Text.large.center.grey We value your attendance.
     .u-largePushBottom
 
-.Flex.row-desktop.column-mobile.justifyCenter.alignCenter
-  .Flex.column.alignCenter
-    p.Text.large.strong Organizer phone
-    .u-smallPushBottom
-    p.Text.large = data.contacts.phone
-    .u-largePushBottom
-  .u-basePushRight
-  .Flex.column.alignCenter
-    p.Text.large.strong Emergency number
-    .u-smallPushBottom
-    p.Text.large = data.contacts.emergency
-    .u-largePushBottom
-  .u-basePushRight
-  .Flex.column.alignCenter
-    p.Text.large.strong Local taxi number
-    .u-smallPushBottom
-    p.Text.large = data.contacts.taxi
-    .u-largePushBottom
-.u-hugePushBottom
+.Flex.justifyCenter
+  = partial "/shared/contacts"
+  .u-hugePushBottom

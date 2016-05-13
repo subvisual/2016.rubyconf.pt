@@ -4,6 +4,8 @@ $Cage-sizes: (
   base: 400px,
   large: 500px,
   coc: 480px,
+  details: 480px,
+  detailsFull: 1020px,
   bragaSmall: 240px,
   bragaLarge: 380px,
   bragaNearby: 460px,
@@ -11,6 +13,10 @@ $Cage-sizes: (
 
 .Cage {
   max-width: 100%;
+}
+
+.Cage.max70Percent {
+  max-width: 70%;
 }
 
 @each $name, $value in $Cage-sizes {

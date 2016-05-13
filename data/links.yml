@@ -15,3 +15,11 @@ places:
   casa_das_natas: https://www.tripadvisor.com/ShowUserReviews-g189154-d4327463-r306586545-Nata_Lisboa-Cascais_Lisbon_District_Central_Portugal.html
   taberna_belga: https://www.tripadvisor.com/Restaurant_Review-g189171-d1792887-Reviews-Taberna_Belga-Braga_Braga_District_Northern_Portugal.html
   bolas_berlim: https://www.tripadvisor.com.br/Restaurant_Review-g189171-d5988351-Reviews-Casa_Bolas_de_Berlim-Braga_Braga_District_Northern_Portugal.html
+cp:
+  url: http://www.cp.pt/passageiros/en/
+  name: www.cp.pt/passageiros/en/
+getbus: http://www.getbus.eu/index.php?lang=en
+google_maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.617119720201!2d-8.41638148406055!3d41.55588667924898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24fe941540934b%3A0x4e607d6747b41780!2sAudit%C3%B3rio+Vita!5e0!3m2!1sen!2sus!4v1466161776588"
+airports:
+  opo: http://www.ana.pt/en-US/Aeroportos/porto/Porto/Departures/DestinationsAndAirlines/Pages/DestinationsAndAirlines.aspx
+  lis: http://www.ana.pt/en-US/Aeroportos/lisboa/Lisboa/Departures/DestinationsandAirlines/Pages/DestinationsandAirlines.aspx

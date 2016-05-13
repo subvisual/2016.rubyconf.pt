@@ -1,0 +1,21 @@
+.u-hugePaddingBottom
+.Flex.column.alignCenter
+  h1.Heading.primary Where to stay?
+  .u-smallPushBottom
+
+  .Cage.large
+    p.Text.small To get access to these prices, you need to send an email to the hotel. Mention that you're attending RubyConf, the room type and your check-in and check-out dates. These special conditions apply for your whole stay, not just the days of the conference, so you can take the chance to spend some time in the country.<Paste>
+  .u-smallPushBottom
+
+  .Img.plants-separator
+  .u-largePushBottom
+
+  .Cage.detailsFull
+    .Flex.wrap.row-desktop.column-mobile.alignCenter-mobile.spaceBetween
+      - data.hotels.each do |hotel|
+        .Cage.details
+          = partial "practical-details/hotel", locals: { hotel: hotel }
+          .u-largePushBottom
+
+  .u-hugePushBottom
+
