@@ -1,3 +1,11 @@
+- first_name: PJ
+  last_name: Hagerty
+  title: Master of Ceremonies
+  twitter: aspleenic
+  github: aspleenic
+  classes: mc
+  mc: true
+
 - first_name: Aaron
   last_name: Patterson
   title: Ruby and Rails Core Teams

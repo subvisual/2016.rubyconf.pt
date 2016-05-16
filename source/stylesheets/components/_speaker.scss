@@ -19,6 +19,12 @@ $Speaker-title-responsive: (
   position: relative;
 }
 
+.Speaker.mc {
+  .Speaker-title {
+    color: $Speaker--master-title-color;
+  }
+}
+
 .Speaker-photo {
   @include responsive($Speaker-photo-responsive);
 

@@ -2,7 +2,10 @@
   img.Speaker-photo src=photo_path(speaker)
   - unless speaker.placeholder
     .Speaker-photoOverlay
-      .Img.plants-speaker-overlay
+      - if speaker.mc
+        .Img.plants-mc-overlay
+      - else
+        .Img.plants-speaker-overlay
   .u-basePushBottom
 
   .Speaker-firstName = speaker.first_name
