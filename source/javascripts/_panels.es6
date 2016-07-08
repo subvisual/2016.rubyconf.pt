@@ -11,3 +11,4 @@ const setHeight = () => {
 
 $(setHeight);
 $(window).on('resize', _.throttle(setHeight, 300));
+$(setHeight);
