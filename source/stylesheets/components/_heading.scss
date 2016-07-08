@@ -1,9 +1,15 @@
 .Heading {
   @include font('huge');
+
+  text-align: center;
 }
 
 .Heading.primary {
   @include font('huge');
 
   font-weight: bold;
+}
+
+.Heading.white {
+  color: $color-white;
 }

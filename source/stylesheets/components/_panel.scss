@@ -14,6 +14,10 @@ $Panel-responsive: (
   background-color: $color-white;
 }
 
+.Panel.cyan {
+  background-color: $color-bright-cyan;
+}
+
 .Panel.fullWidth {
   padding: 0;
 }

@@ -1,0 +1,11 @@
+.Panel class=modifier
+  .u-largePaddingBottom
+
+  .Flex.column.alignCenter
+    h1.Heading.primary class=try(:title_modifier) = "#{type.capitalize} sponsors"
+    .u-basePushBottom
+    .Flex.row.wrap.justifyCenter
+      - data.sponsors.public_send(type).each do |sponsor|
+        = partial "shared/sponsor", locals: { sponsor: sponsor }
+
+  .u-largePaddingBottom

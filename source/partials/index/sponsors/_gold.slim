@@ -1,0 +1,11 @@
+#platinum.Panel.cyan
+  .u-largePaddingBottom
+
+  .Flex.column.alignCenter
+    h1.Heading.primary.white Platinum sponsors
+    .u-basePushBottom
+    .Flex.row.wrap.justifyCenter
+      - data.sponsors.platinum.each do |sponsor|
+        = partial "shared/sponsor", locals: { sponsor: sponsor }
+
+  .u-largePaddingBottom
