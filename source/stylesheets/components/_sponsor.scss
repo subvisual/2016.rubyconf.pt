@@ -1,5 +1,10 @@
 $Sponsor-padding: 0 $space-small;
+$Sponsor-max-width: 200px;
 
 .Sponsor {
   padding: $Sponsor-padding;
+}
+
+.Sponsor-logo {
+  max-width: $Sponsor-max-width;
 }

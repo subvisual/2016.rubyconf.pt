@@ -1,21 +1,8 @@
 platinum:
-  - name: Landing.jobs
-    image: landing-jobs.png
-    url: https://landing.jobs/
-  - name: Fyber
-    image: fyber.png
-    url: http://www.fyber.com/
-  - name: Jobandtalent
-    image: jobandtalent.png
-    url: https://www.jobandtalent.com/
 
 gold:
-  - name: Jobandtalent
-    image: jobandtalent.png
-    url: https://www.jobandtalent.com/
+  - name: Bitcrowd
+    image: bitcrowd.png
+    url: http://bitcrowd.net/
 
 stone:
-  - name: Jobandtalent
-    image: jobandtalent.png
-    url: https://www.jobandtalent.com/
-
