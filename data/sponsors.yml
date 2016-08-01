@@ -6,3 +6,6 @@ gold:
     url: http://bitcrowd.net/
 
 stone:
+  - name: JetBrains
+    image: jetbrains.png
+    url: https://www.jetbrains.com/
