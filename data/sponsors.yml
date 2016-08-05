@@ -5,6 +5,10 @@ gold:
     image: bitcrowd.png
     url: http://bitcrowd.net/
 
+  - name: d:evolute
+    image: devolute.png
+    url: http://www.devolute.org/
+
 stone:
   - name: JetBrains
     image: jetbrains.png

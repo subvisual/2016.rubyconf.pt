@@ -3,6 +3,10 @@ $Sponsor-max-width: 200px;
 
 .Sponsor {
   padding: $Sponsor-padding;
+
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .Sponsor-logo {
