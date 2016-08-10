@@ -13,3 +13,7 @@ stone:
   - name: JetBrains
     image: jetbrains.png
     url: https://www.jetbrains.com/
+
+  - name: AppSignal
+    image: appsignal.png
+    url: https://appsignal.com/
