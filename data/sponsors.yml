@@ -9,6 +9,10 @@ gold:
     image: devolute.png
     url: http://www.devolute.org/
 
+  - name: Simplificator
+    image: simplificator.png
+    url: http://www.simplificator.com/
+
 stone:
   - name: JetBrains
     image: jetbrains.png
