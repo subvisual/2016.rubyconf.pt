@@ -13,6 +13,10 @@ gold:
     image: simplificator.png
     url: http://www.simplificator.com/
 
+  - name: Red Light
+    image: redlightsoftware.svg
+    url: http://weareredlight.com/
+
 stone:
   - name: JetBrains
     image: jetbrains.png
