@@ -14,12 +14,3 @@
     .Flex.row.wrap.justifyCenter
       - data.speakers.each do |speaker|
         = partial "shared/speaker", locals: { speaker: speaker }
-
-    .Img.plants-separator-alt
-    .u-basePushBottom
-    p.Text.large.strong.center Want to be part of this amazing lineup of speakers?
-    .u-smallPushBottom
-    p.Text.large.grey.center Call for proposals is open until July 15th.
-    .u-basePushBottom
-    = link_to "Submit a talk", data.links.cfp, class: "Button red"
-  .u-hugePaddingBottom

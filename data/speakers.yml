@@ -72,8 +72,26 @@
   twitter: pat
   github: pat
 
-- first_name: Searching for
-  last_name: More
-  classes: more
-  photo_ext: png
-  placeholder: true
+- first_name: Marie
+  last_name: Kochsiek
+  title: Programmer & Social Scientist
+  twitter: lila_luca
+  github: lilaluca
+
+- first_name: Thea
+  last_name: Kupler
+  title: Changer & Programmer to be, Sustainability Enthusiast
+  twitter: theatanzt
+  github: theaamanda
+
+- first_name: Mayar
+  last_name: Saleh
+  title: Computer engineering and RGSoC student
+  twitter: MayarAlaa122
+  github: MayarAlaa
+
+- first_name: Nada
+  last_name: Salama
+  title: Computer engineering and RGSoC student
+  twitter: Nada_Ashraf96
+  github: Nada1996
