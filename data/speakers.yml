@@ -6,11 +6,11 @@
   classes: mc
   mc: true
 
-- first_name: Aaron
-  last_name: Patterson
-  title: Ruby and Rails Core Teams
-  twitter: tenderlove
-  github: tenderlove
+- first_name: Pat
+  last_name: Allan
+  title: Gelato Connoisseur, Pancake Master, Ruby Developer
+  twitter: pat
+  github: pat
 
 - first_name: Martin
   last_name: Fowler
@@ -24,53 +24,17 @@
   twitter: sgrif
   github: sgrif
 
-- first_name: Kerri
-  last_name: Miller
-  title: Software Developer, Team Lead, Puppeteer, Sous Chef
-  twitter: kerrizor
-  github: kerrizor
-
-- first_name: Yehuda
-  last_name: Katz
-  title: Ember.js Creator and Open Source Addict
-  twitter: wycats
-  github: wycats
-
 - first_name: Bryan
   last_name: Helmkamp
   title: Founder and CEO of Code Climate
   twitter: brynary
   github: brynary
 
-- first_name: Tobias
-  last_name: Pfeiffer
-  title: Developer, Open-Source-Enthusiast, Human
-  twitter: pragtob
-  github: pragtob
-
-- first_name: Katherine
-  last_name: Wu
-  title: Software Engineer at Engine Yard, Brightly colored, Curious, and Strong
-  twitter: kwugirl
-  github: kwugirl
-
-- first_name: José
-  last_name: Mota
-  title: Ruby developer and educator
-  twitter: josemotanet
-  github: josemotanet
-
-- first_name: Caio
-  last_name: Sacramento
-  title: Software Engineer at Meedan, Headbanger
-  twitter: caiosba
-  github: caiosba
-
-- first_name: Pat
-  last_name: Allan
-  title: Gelato Connoisseur, Pancake Master, Ruby Developer
-  twitter: pat
-  github: pat
+- first_name: Yehuda
+  last_name: Katz
+  title: Ember.js Creator and Open Source Addict
+  twitter: wycats
+  github: wycats
 
 - first_name: Marie
   last_name: Kochsiek
@@ -84,14 +48,51 @@
   twitter: theatanzt
   github: theaamanda
 
-- first_name: Mayar
-  last_name: Saleh
-  title: Computer engineering and RGSoC student
-  twitter: MayarAlaa122
-  github: MayarAlaa
+- first_name: Kerri
+  last_name: Miller
+  title: Software Developer, Team Lead, Puppeteer, Sous Chef
+  twitter: kerrizor
+  github: kerrizor
+
+- first_name: José
+  last_name: Mota
+  title: Ruby developer and educator
+  twitter: josemotanet
+  github: josemotanet
+
+- first_name: Aaron
+  last_name: Patterson
+  title: Ruby and Rails Core Teams
+  twitter: tenderlove
+  github: tenderlove
+
+- first_name: Tobias
+  last_name: Pfeiffer
+  title: Developer, Open-Source-Enthusiast, Human
+  twitter: pragtob
+  github: pragtob
+
+- first_name: Caio
+  last_name: Sacramento
+  title: Software Engineer at Meedan, Headbanger
+  twitter: caiosba
+  github: caiosba
 
 - first_name: Nada
   last_name: Salama
   title: Computer engineering and RGSoC student
   twitter: Nada_Ashraf96
   github: Nada1996
+
+- first_name: Mayar
+  last_name: Saleh
+  title: Computer engineering and RGSoC student
+  twitter: MayarAlaa122
+  github: MayarAlaa
+
+- first_name: Katherine
+  last_name: Wu
+  title: Software Engineer at Engine Yard, Brightly colored, Curious, and Strong
+  twitter: kwugirl
+  github: kwugirl
+

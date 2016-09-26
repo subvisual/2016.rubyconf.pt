@@ -9,7 +9,11 @@
     .Cage.largeAtMost
       p.Text.strong.large Braga
       br
-      p.Text One of the oldest portuguese cities, established in Roman times as Bracara Avgvsta, Braga is nowadays a young city, full of traditions and places to visit.
+      p.Text
+        ' One of the oldest portuguese cities, established in Roman times as
+        ' Bracara Avgvsta, Braga is nowadays a young city, full of traditions and
+        ' places to visit.
+        = link_to "Learn more.", "/braga", class: "Link"
 
       .u-basePushBottom
 

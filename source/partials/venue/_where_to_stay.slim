@@ -14,7 +14,7 @@
     .Flex.wrap.row-desktop.column-mobile.alignCenter-mobile.spaceBetween
       - data.hotels.each do |hotel|
         .Cage.details
-          = partial "practical-details/hotel", locals: { hotel: hotel }
+          = partial "venue/hotel", locals: { hotel: hotel }
           .u-largePushBottom
 
   .u-hugePushBottom

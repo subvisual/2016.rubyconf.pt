@@ -1,14 +1,11 @@
-- text: Braga
-  url: "/braga"
+- text: Buy Ticket
+  url: '/#tickets'
 
 - text: Speakers
   url: '/#speakers'
 
-- text: Practical Details
-  url: '/practical-details'
-
-- text: Buy Ticket
-  url: '/#tickets'
+- text: Venue
+  url: '/venue'
 
 - text: Sponsor Us
   link_key: 'sponsor'
