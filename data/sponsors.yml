@@ -14,8 +14,12 @@ gold:
     url: http://www.simplificator.com/
 
   - name: Red Light
-    image: redlightsoftware.svg
+    image: redlightsoftware.png
     url: http://weareredlight.com/
+
+  - name: cookpad
+    image: cookpad.png
+    url: https://cookpad.com/us
 
 stone:
   - name: JetBrains
