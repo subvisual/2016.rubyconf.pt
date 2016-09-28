@@ -3,10 +3,8 @@
 
 $breakpoints: (
   'mobile': 650px,
-  'desktop': 1024px
+  'desktop': 1025px
 );
-
-$font-family: 'brandon-grotesque';
 
 // Spacing
 $space-small: 20px;
@@ -25,3 +23,7 @@ $color-greenish-teal: #39d26c;
 $color-seaweed: #19d374;
 $color-sun-yellow: #f8e02d;
 $color-bright-cyan: #48d0f9;
+
+$font-family: 'brandon-grotesque';
+$font-weight-regular: 400;
+$font-weight-bold: 700;

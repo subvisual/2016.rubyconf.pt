@@ -1,0 +1,102 @@
+$Schedule-dash-width: 15px;
+$Schedule-dash-height: 1px;
+$Schedule-dash-spacing: 22px;
+
+.Schedule {
+  display: flex;
+  margin: auto;
+  max-width: 1150px;
+
+  @include mobile {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+
+.Schedule-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.Schedule-halfColumn {
+  margin-right: 10%center;
+
+  @include mobile {
+    margin: $space-base 0;
+  }
+}
+
+.Schedule-columnTitle {
+  width: 50%;
+  align-self: center;
+  text-align: left;
+
+  @include mobile {
+    width: 65%;
+    margin-top: $space-base;
+    margin-left: calc(35% + 1px);
+  }
+}
+
+.Schedule-date {
+  color: $color-grey;
+}
+
+.Schedule-dash {
+  background: $color-greenish-teal;
+  width: $Schedule-dash-width;
+  height: $Schedule-dash-height;
+  display: block;
+  margin-top: $space-small * 0.5;
+  margin-left: $Schedule-dash-spacing;
+
+  @include mobile {
+    margin-top: $space-small;
+    margin-left: 0;
+  }
+}
+
+.Schedule-columnFooter {
+  // Event-icon-size + border-size
+  width: calc(50% - 12px);
+  height: $space-huge * 0.5;
+  display: flex;
+  align-self: flex-end;
+  align-items: flex-end;
+  border-left: 1px solid $color-greenish-teal;
+
+  @include mobile {
+    width: 65%;
+    height: 0;
+    align-self: flex-end;
+  }
+}
+
+.Schedule-columnFooter {
+  .Schedule-dash {
+    display: none;
+
+    @include mobile {
+      display: block;
+      margin-left: 0;
+    }
+  }
+}
+
+.Schedule-finalDash {
+  background: $color-greenish-teal;
+  width: $Schedule-dash-width;
+  height: $Schedule-dash-height;
+  display: block;
+
+  transform: translateX(166px);
+
+  @include mobile {
+    transform: translateX(188px);
+  }
+}

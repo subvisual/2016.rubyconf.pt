@@ -1,0 +1,140 @@
+$Event-icon-size: 11px;
+$Event-icon-border-size: 1px;
+
+.Event {
+  display: flex;
+  // justify-content: flex-end;
+
+  @include mobile {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+.Event-name {
+  text-transform: none;
+}
+
+.Event.talk .Event-name {
+  font-weight: bold;
+}
+
+.Event.break .Event-name,
+.Event.party .Event-name,
+.Event.coffee-break .Event-name {
+  &, a {
+    color: $color-grey;
+  }
+
+  a {
+   text-decoration: none;
+  }
+}
+
+.Event-time {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+  padding: $Event-icon-size 0;
+  // margin-top: $Event-icon-size / 2 - $Event-icon-border-size * 2;
+  text-align: right;
+  color: $color-dark-salmon;
+  padding-right: 20px;
+  margin-top: 5px;
+
+  @include mobile {
+    width: calc(35% + 12px);
+    @include font(base)
+  }
+}
+
+.Event-details {
+  // Event-icon-size + border-size
+  width: calc(50% - 12px);
+  align-self: flex-end;
+  padding: $Event-icon-size + 5px 0;
+  text-transform: uppercase;
+  border-left: $Event-icon-border-size solid $color-greenish-teal;
+
+  @include mobile {
+    width: 65%;
+    @include font(base);
+  }
+
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: $Event-icon-size;
+    height: $Event-icon-size;
+    margin-top: $Event-icon-size / 2;
+    margin-right: $Event-icon-size;
+    display: inline-block;
+    border: $Event-icon-border-size solid $color-greenish-teal;
+    border-radius: 50%;
+    background: $color-white;
+    transform: translateX(-$Event-icon-size / 2 - $Event-icon-border-size);
+  }
+}
+
+.Event-name {
+  min-height: 22px;
+  display: block;
+  margin-left: $space-small;
+}
+
+.Event.Event--talk {
+  .Event-time {
+    color: $color-blue;
+  }
+
+  .Event-details {
+    font-style: italic;
+    text-transform: capitalize;
+
+    &:before {
+      background: $color-blue;
+      border-color: $color-blue;
+    }
+  }
+}
+
+.Event.Event--lunch {
+  .Event-details:before {
+    background: $color-greenish-teal;
+    border-color: $color-greenish-teal;
+  }
+}
+
+.Event-name + .Event-speaker {
+  margin-top: 10px;
+}
+
+.Event-speaker,
+.Event-sponsor {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.Event-speakerPhoto,
+.Event-sponsorPhoto {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.Event-sponsoredBy {
+  color: $color-greyish-brown;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.Event-speakerName,
+.Event-sponsorName {
+  color: $color-greyish-brown;
+  // font-weight: bold;
+  margin-left: 10px;
+  text-decoration: none;
+  text-transform: none;
+}

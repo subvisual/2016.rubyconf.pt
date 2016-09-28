@@ -1,0 +1,30 @@
+= partial "nav"
+
+
+.Panel.sand.u-relative
+  .Stitches.left.blue
+  .Stitches.right.blue
+  .Stitches.bottom.blue
+
+  .u-largePaddingBottom
+  .Flex.column.alignCenter
+    h1.Heading.primary Schedule
+
+    .Img.plants-separator
+
+  .u-largePushBottom
+
+  .Schedule
+    - data.schedule.each do |day|
+      .Schedule-column
+        .Schedule-columnTitle
+          .Text.red.strong = day.name
+          .Schedule-date = day.date
+          .Schedule-dash
+
+        - day.events.each do |event|
+          = partial "schedule/event", locals: { event: event }
+
+        .Schedule-finalDash
+
+  .u-xLargePaddingBottom

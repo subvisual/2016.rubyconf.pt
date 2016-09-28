@@ -1,0 +1,44 @@
+.Event class=event.type
+  .Event-time
+    = event.start
+    =<> "-"
+    = event.end
+
+  .Event-details
+    - if event.rails_girls
+      .Event-name = event.name
+      .Event-speaker
+        img.Event-speakerPhoto src="/images/speakers/marie-kochsiek.jpg"
+        .u-xSmallPushRight
+        img.Event-speakerPhoto src="/images/speakers/thea-kupler.jpg"
+        .u-xSmallPushRight
+        img.Event-speakerPhoto src="/images/speakers/nada-salama.jpg"
+        .u-xSmallPushRight
+        img.Event-speakerPhoto src="/images/speakers/mayar-saleh.jpg"
+    - elsif event.speaker
+      - speaker = find_speaker(event.speaker)
+      - if speaker.talk != "talk"
+        .Event-name = speaker.talk
+      .Event-speaker
+        img.Event-speakerPhoto src=photo_path(speaker)
+        span.Event-speakerName
+          = "#{speaker.first_name} #{speaker.last_name}"
+    - elsif event.type == "party"
+      - sponsor = find_sponsor(event.sponsor)
+      .Event-name
+        = link_to event.url, target: "_blank"
+          => event.name
+          ' (at
+          = event.location
+          ' )
+      .Event-sponsor
+        = link_to sponsor.url, target: "_blank", class: "u-noDecoration"
+          .Flex.alignCenter
+            span.Event-sponsoredBy Sponsored by
+            span.Event-sponsorName = sponsor.name
+            .u-smallPushRight
+            img.Event-sponsorPhoto src="/images/sponsors/#{sponsor.image}"
+
+    - else
+      .Event-name = event.name
+
