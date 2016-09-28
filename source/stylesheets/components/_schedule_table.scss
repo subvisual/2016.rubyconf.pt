@@ -1,0 +1,47 @@
+$ScheduleTable-values: (
+  padding: (40px 0, 120px 160px),
+);
+
+.ScheduleTable {
+  @include responsive($ScheduleTable-values);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.ScheduleTable-entry {
+  display: inline-block;
+  width: 50%;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+// This code sucks, but it was the easiest way I found and since this is
+// also throwaway code, who cares?
+.ScheduleTable-entry.mobilePadded .ScheduleTable-day {
+  @include desktop {
+    margin-left: 40%;
+  }
+}
+
+.ScheduleTable-entry.day2 {
+  @include desktop {
+    .ScheduleTable-day,
+    .Event {
+      margin-left: $space-base;
+    }
+  }
+}
+
+.ScheduleTable-separator {
+  height: 2px;
+  border: 1px solid $color-bright-cyan;
+  opacity: 0.5;
+}

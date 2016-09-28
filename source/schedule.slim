@@ -1,0 +1,40 @@
+= partial "nav"
+
+
+.Panel.sand.u-relative
+  .Stitches.left.blue
+  .Stitches.right.blue
+  .Stitches.bottom.blue
+
+  .u-largePaddingBottom
+  .Flex.column.alignCenter
+    h1.Heading.primary Schedule
+
+    .Img.plants-separator
+
+  .ScheduleTable
+    - data.program.each_with_index do |item, index|
+      - if index > 0
+
+      = schedule_table_entry(index) do
+        .ScheduleTable-day
+          h2.Text.huge.strong.red = "Day #{index + 1}"
+
+        .u-basePushBottom
+
+        - item.events.each do |event|
+          hr.ScheduleTable-separator
+
+          a.div class="Event #{event.duration}" href=event.url
+            = event_time(event.start, event.end, mobile_only: index.odd?)
+
+            div id="#{speaker_id(event.name) if event.type == 'primary'}"
+              p class="Event-name #{event.type}" = event.name
+
+              - if event.subtitle && event.image
+                .u-xSmallPushBottom
+                p class="Event-subtitle" = event.subtitle
+                .u-xSmallPushBottom
+                = image_tag event.image, class: "Event-logo"
+
+        .u-xLargePushBottom.u-desktop

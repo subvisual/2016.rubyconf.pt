@@ -13,4 +13,8 @@ module SpeakerHelpers
   def github_url(speaker)
     "https://github.com/#{speaker.github}"
   end
+
+  def speaker_id(name)
+    I18n.transliterate name.downcase.gsub(" ", "-")
+  end
 end
