@@ -1,25 +1,25 @@
 - events:
   - name: Check-in
-    start: "9:00"
-    end: "9:40"
+    start: "8:30"
+    end: "9:15"
     duration: talk
     type: secondary
 
   - name: Opening
-    start: "9:40"
-    end: "10:00"
+    start: "9:15"
+    end: "9:30"
     duration: break
     type: secondary
 
-  - name: Yehuda Katz
-    start: "10:00"
-    end: "10:40"
+  - name: Martin Fowler
+    start: "9:30"
+    end: "10:30"
     duration: talk
     type: primary
-    url: "/speakers#yehuda"
+    url: "/speakers#martin"
 
   - name: Coffee Break
-    start: "10:40"
+    start: "10:30"
     end: "11:00"
     duration: break
     type: secondary alternative
@@ -37,12 +37,12 @@
     duration: break
     type: secondary alternative
 
-  - name: Sean Griffin
+  - name: Bryan Helmkamp
     start: "12:00"
     end: "12:40"
     duration: talk
     type: primary
-    url: "/speakers#sean"
+    url: "/speakers#bryan"
 
   - name: Lunch
     start: "12:40"
@@ -103,30 +103,30 @@
 
 - events:
   - name: Check-in
-    start: "9:00"
-    end: "9:40"
-    duration: talk
+    start: "8:30"
+    end: "9:30"
+    duration: keynote
     type: secondary
 
-  - name: Martin Fowler
-    start: "9:40"
-    end: "10:40"
-    duration: keynote
+  - name: Yehuda Katz
+    start: "9:30"
+    end: "10:30"
+    duration: talk
     type: primary
-    url: "/speakers#martin"
+    url: "/speakers#yehuda"
 
   - name: Coffee Break
-    start: "10:40"
+    start: "10:30"
     end: "11:00"
     duration: break
     type: secondary alternative
 
-  - name: Bryan Helmkamp
+  - name: Piotr Szotkowski
     start: "11:00"
     end: "11:40"
     duration: talk
     type: primary
-    url: "/speakers#bryan"
+    url: "/speakers#piotr"
 
   - name: Break
     start: "11:40"
