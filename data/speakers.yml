@@ -18,12 +18,6 @@
   twitter: martinfowler
   github: martinfowler
 
-- first_name: Sean
-  last_name: Griffin
-  title: Rails Commiter, ActiveRecord Maintainer, Creator of Diesel
-  twitter: sgrif
-  github: sgrif
-
 - first_name: Bryan
   last_name: Helmkamp
   title: Founder and CEO of Code Climate
@@ -89,6 +83,12 @@
   title: Computer engineering and RGSoC student
   twitter: MayarAlaa122
   github: MayarAlaa
+
+- first_name: Piotr
+  last_name: Szotkowski
+  title: Hacker scientist. Assistant professor at Warsaw University of Technology
+  twitter: chastell
+  github: chastell
 
 - first_name: Katherine
   last_name: Wu
