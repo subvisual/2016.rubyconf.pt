@@ -1,4 +1,7 @@
 platinum:
+  - name: Freeletics
+    image: freeletics.png
+    url: https://www.freeletics.com
 
 gold:
   - name: Bitcrowd
