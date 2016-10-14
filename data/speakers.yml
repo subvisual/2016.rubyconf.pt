@@ -12,17 +12,17 @@
   twitter: pat
   github: pat
 
+- first_name: Hiro
+  last_name: Asari
+  title: Hacker on Travis CI and JRuby
+  twitter: hiro_asari
+  github: BanzaiMan
+
 - first_name: Martin
   last_name: Fowler
   title: Software Development Loudmouth
   twitter: martinfowler
   github: martinfowler
-
-- first_name: Bryan
-  last_name: Helmkamp
-  title: Founder and CEO of Code Climate
-  twitter: brynary
-  github: brynary
 
 - first_name: Yehuda
   last_name: Katz
