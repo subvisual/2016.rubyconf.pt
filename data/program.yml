@@ -103,20 +103,20 @@
 
 - events:
   - name: Check-in
-    start: "8:30"
-    end: "9:30"
+    start: "9:00"
+    end: "10:00"
     duration: keynote
     type: secondary
 
   - name: Yehuda Katz
-    start: "9:30"
-    end: "10:30"
+    start: "10:00"
+    end: "10:40"
     duration: talk
     type: primary
     url: "/schedule"
 
   - name: Coffee Break
-    start: "10:30"
+    start: "10:40"
     end: "11:00"
     duration: break
     type: secondary alternative
