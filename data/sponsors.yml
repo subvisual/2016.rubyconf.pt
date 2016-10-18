@@ -24,6 +24,10 @@ gold:
     image: cookpad.png
     url: https://cookpad.com/us
 
+  - name: xing
+    image: xing.png
+    url: https://www.xing.com/en
+
 stone:
   - name: JetBrains
     image: jetbrains.png
