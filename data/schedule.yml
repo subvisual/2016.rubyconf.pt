@@ -68,7 +68,7 @@
       end: "17:00"
       type: coffee-break
 
-    - name: Rails Girls Summer of Code
+    - name: "Rails Girls Summer of Code: Falling into Rabbit Holes"
       start: "17:00"
       end: "17:40"
       type: talk
