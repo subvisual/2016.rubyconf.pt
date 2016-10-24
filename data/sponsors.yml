@@ -36,3 +36,11 @@ stone:
   - name: AppSignal
     image: appsignal.png
     url: https://appsignal.com/
+
+  - name: Danke
+    image: danke.png
+    url: http://www.danke.pt/
+
+  - name: Bicafé
+    image: bicafe.png
+    url: http://www.bicafecapsulas.com/
