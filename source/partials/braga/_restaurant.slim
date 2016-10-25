@@ -1,0 +1,18 @@
+.Flex.column.alignCenter
+  .Text.large.blue.strong.u-xSmallPushBottom
+    = restaurant.name
+  .Text.u-xSmallPushBottom
+    = restaurant.description
+  .Flex
+    .Img.icons-phone.u-xSmallPushRight
+    = link_to "tel:#{restaurant.phone}", class: "Text red strong u-noDecoration u-xSmallPushBottom" do
+      span.u-xSmallPushRight = restaurant.phone[0..3]
+      span.u-xSmallPushRight = restaurant.phone[4..6]
+      span.u-xSmallPushRight = restaurant.phone[7..9]
+      span = restaurant.phone[10..12]
+  .Flex
+    .Img.icons-location.u-xSmallPushRight
+    = link_to restaurant.location, class: "Text red strong center u-noDecoration" do
+      = restaurant.address
+      br
+      = [restaurant.postal_code, restaurant.city].compact.join(", ")

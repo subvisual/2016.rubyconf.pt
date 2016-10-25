@@ -38,3 +38,9 @@ $Cage-sizes: (
     width: map-get($Cage-sizes, 'large');
   }
 }
+
+.Cage.bragaNearby-desktop {
+  @include desktop {
+    width: map-get($Cage-sizes, 'bragaNearby');
+  }
+}

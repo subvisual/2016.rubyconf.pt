@@ -58,6 +58,14 @@ $spacings: (
     }
   }
 
+  .u-#{$name}PushBottomInBetween-desktop {
+    &:not(:last-child) {
+      @include desktop {
+        margin-bottom: $value;
+      }
+    }
+  }
+
   .u-#{$name}PushRight-desktop {
     @include desktop {
       margin-right: $value;

@@ -1,0 +1,18 @@
+.u-hugePaddingBottom
+.Flex.column.alignCenter
+  h1.Heading.primary Where to eat
+
+  .Img.plants-separator
+  .u-largePushBottom
+
+  - data.restaurants.each_slice(2) do |restaurants|
+    .Flex.row-desktop.column-mobile.alignCenter-mobile.u-basePushBottomInBetween
+      - restaurants.each do |restaurant|
+        .Cage.bragaNearby-desktop.u-basePushBottom.u-basePushBottomInBetween-mobile
+          = partial "braga/restaurant", locals: { restaurant: restaurant }
+.u-basePushBottom
+.Flex.justifyCenter
+  div
+    .Text.center Suggestions provided by
+    = link_to "http://bragacool.com/en", target: :blank, class: "Sponsor" do
+      = image_tag "sponsors/braga_cool.svg", alt: "Braga Cool", class: "Sponsor-logo"

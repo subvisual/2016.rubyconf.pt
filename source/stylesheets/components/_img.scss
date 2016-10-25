@@ -82,7 +82,9 @@ $Img--tweet-values: (
 }
 
 .Img.icons-github,
-.Img.icons-twitter {
+.Img.icons-twitter,
+.Img.icons-phone,
+.Img.icons-location {
   width: 20px;
   height: 20px;
   background-position: center;
@@ -96,6 +98,14 @@ $Img--tweet-values: (
 
 .Img.icons-github {
   background-image: url("/images/icons/github.svg");
+}
+
+.Img.icons-phone {
+  background-image: url("/images/icons/phone.svg");
+}
+
+.Img.icons-location {
+  background-image: url("/images/icons/location.svg");
 }
 
 .Img.logo-nav {

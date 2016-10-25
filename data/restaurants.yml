@@ -1,0 +1,62 @@
+- name: Félix Taberna
+  description: Traditional Portuguese restaurant.
+  phone: "+351253617701"
+  address: Largo da Praça Velha, 17
+  postal_code: 4700-439
+  city: Braga
+  location: "https://goo.gl/maps/BKb1DjByGk12"
+
+- name: Retrokitchen
+  description: Traditional Portuguese restaurant.
+  phone: "+351253267023"
+  address: Rua do Anjo, 96
+  postal_code: 4700-305
+  city: Braga
+  location: "https://goo.gl/maps/Hr5DK318wat"
+
+- name: Taberna Belga
+  description: Traditional Portuguese restaurant.
+  slogan: The best \"francesinha\" in the world
+  phone: "+351253625098"
+  address: Rua Cónego Luciano Afonso dos Santos, Loja 1A
+  city: Braga
+  location: "https://goo.gl/maps/XoA2W5DHbTQ2"
+
+- name: Alfacinha
+  description: Macrobiotic restaurant.
+  phone: "+351253261021"
+  address: Rua D. Gonçalo Pereira, 75
+  postal_code: 4700-032
+  city: Braga
+  location: "https://goo.gl/maps/13XLJgRdcBt"
+
+- name: Lakkana
+  description: Thai restaurant.
+  phone: "+351253687027"
+  address: Rua Dom Gualdim Pais, 34
+  postal_code: 4700-423
+  city: Braga
+  location: "https://goo.gl/maps/n6tamWo1Vc72"
+
+- name: Michizaki
+  description: Japanese restaurant.
+  phone: "+351253086587"
+  address: Rua Dom Frei Caetano Brandão, 169
+  postal_code: 4700-031
+  city: Braga
+  location: "https://goo.gl/maps/nLQXPSYt2R82"
+
+- name: Boa Boca
+  description: Fine dining restaurant.
+  phone: "+351966309914"
+  address: Rua Fundação Gulbenkian, 76
+  city: São Victor, Braga
+  location: "https://goo.gl/maps/BdqnH2Debqs"
+
+- name: Tábuas, Copos & Outras Cenas
+  description: Fusion sushi restaurant.
+  phone: "+351253206000"
+  address: Rua D. Gonçalo Pereira, 54
+  postal_code: 4700-032
+  city: Braga
+  location: "https://goo.gl/maps/21krYKPUp3D2"
