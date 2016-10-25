@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^4.1.8",
+    "bower": "^1.7.9",
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^4.0.0"
   }
