@@ -5,6 +5,7 @@
   postal_code: 4700-439
   city: Braga
   location: "https://goo.gl/maps/BKb1DjByGk12"
+  foursquare: "https://pt.foursquare.com/v/taberna-do-f%C3%A9lix/4d3b683acc48224b08b5464f"
 
 - name: Retrokitchen
   description: Traditional Portuguese restaurant.
@@ -13,6 +14,7 @@
   postal_code: 4700-305
   city: Braga
   location: "https://goo.gl/maps/Hr5DK318wat"
+  foursquare: "https://pt.foursquare.com/v/retrokitchen/549b07ff498e198131b97ce2"
 
 - name: Taberna Belga
   description: Traditional Portuguese restaurant.
@@ -21,6 +23,7 @@
   address: Rua Cónego Luciano Afonso dos Santos, Loja 1A
   city: Braga
   location: "https://goo.gl/maps/XoA2W5DHbTQ2"
+  foursquare: "https://pt.foursquare.com/v/taberna-belga/4cfff68621ea6ea8b06d3f9f"
 
 - name: Alfacinha
   description: Macrobiotic restaurant.
@@ -29,6 +32,7 @@
   postal_code: 4700-032
   city: Braga
   location: "https://goo.gl/maps/13XLJgRdcBt"
+  foursquare: "https://pt.foursquare.com/v/alfacinha/4caf06fa1168a093aaa31e23"
 
 - name: Lakkana
   description: Thai restaurant.
@@ -37,6 +41,7 @@
   postal_code: 4700-423
   city: Braga
   location: "https://goo.gl/maps/n6tamWo1Vc72"
+  foursquare: "https://pt.foursquare.com/v/lakkana/5400eb0a498ee8f46cf54543"
 
 - name: Michizaki
   description: Japanese restaurant.
@@ -45,6 +50,7 @@
   postal_code: 4700-031
   city: Braga
   location: "https://goo.gl/maps/nLQXPSYt2R82"
+  foursquare: "https://pt.foursquare.com/v/michizaki/57509d20498ec36578c9e8ac"
 
 - name: Boa Boca
   description: Fine dining restaurant.
@@ -52,6 +58,7 @@
   address: Rua Fundação Gulbenkian, 76
   city: São Victor, Braga
   location: "https://goo.gl/maps/BdqnH2Debqs"
+  foursquare: "https://pt.foursquare.com/v/michizaki/57509d20498ec36578c9e8ac"
 
 - name: Tábuas, Copos & Outras Cenas
   description: Fusion sushi restaurant.
@@ -60,3 +67,4 @@
   postal_code: 4700-032
   city: Braga
   location: "https://goo.gl/maps/21krYKPUp3D2"
+  foursquare: "https://pt.foursquare.com/v/t%C3%A1buas-copos--outras-cenas/54f0e362498e6bc708a7d3ae"

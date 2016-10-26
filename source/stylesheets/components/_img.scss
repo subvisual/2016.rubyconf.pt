@@ -84,6 +84,7 @@ $Img--tweet-values: (
 .Img.icons-github,
 .Img.icons-twitter,
 .Img.icons-phone,
+.Img.icons-foursquare,
 .Img.icons-location {
   width: 20px;
   height: 20px;
@@ -106,6 +107,10 @@ $Img--tweet-values: (
 
 .Img.icons-location {
   background-image: url("/images/icons/location.svg");
+}
+
+.Img.icons-foursquare {
+  background-image: url("/images/icons/foursquare.svg");
 }
 
 .Img.logo-nav {
